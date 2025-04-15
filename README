@@ -1,0 +1,10 @@
+SMOORF
+
+A simple steganography tool that allows you to hide a secret message inside a plain text file using steganography. The secret message is encoded in binary and embedded within spaces, newlines, and tabs using invisible Unicode characters, making it difficult to detect.
+
+Usage:
+python smoorph.py encode <original_file> <secret_message> <output_file>
+python smoorph.py decode <encoded_file>
+
+Dependencies:
+Python3 and pyfiglet

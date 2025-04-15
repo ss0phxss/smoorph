@@ -12,7 +12,7 @@ def encode(original_file, secret_message, output_file):
     with open(original_file, 'r') as f:
         original_text = f.read()
 
-    # Convert secret message to binary
+    # Convert secret msg to binary
     binary_message = text_to_binary(secret_message)
     
     encoded_text = ""
@@ -25,7 +25,7 @@ def encode(original_file, secret_message, output_file):
                 encoded_text += '\u200A'  # Hair space (invisible)
             binary_index += 1
 
-    # Add remaining binary message at the end if there's space
+    # If there's space, adds remaining binary message at the end 
     while binary_index < len(binary_message):
         encoded_text += ' '
         if binary_message[binary_index] == '1':
